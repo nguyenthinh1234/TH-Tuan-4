@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_Song"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/ic_launcher_background" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bg_Song"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_tim"/>
+
+    <TextView
+        android:id="@+id/tvNameSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bg_Song"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="80dp"
+        android:text="Name song"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/NameSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bg_Song"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="Name singer"
+        android:textColor="@color/white"
+
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Time_HT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bg_Song"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Time"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/Time_KT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bg_Song"
+        android:layout_alignBottom="@+id/bg_Song"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Time"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/change_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_Song"
+        android:layout_alignBottom="@+id/bg_Song"
+        android:layout_marginTop="12dp" />
+    <ImageView
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_Song"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/repeat" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bg_Song"
+        android:layout_margin="30dp"
+        android:layout_alignEnd="@id/bg_Song"
+        android:src="@drawable/random"/>
+
+    <ImageView
+        android:id="@+id/rewind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeat"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/ic_rewind" />
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeat"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/rewind"
+        android:src="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repeat"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/img_play"
+        android:src="@drawable/ic_fast_forward" />
+
+    <ImageView
+        android:id="@+id/mute_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rewind"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_volume_mute" />
+
+    <SeekBar
+        android:id="@+id/change_volume"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_play"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28sp"
+        android:layout_toEndOf="@+id/mute_volume" />
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rewind"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_volume" />
+
+    <ImageView
+        android:id="@+id/img_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_below="@+id/mute_volume"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="90dp"
+        android:layout_toEndOf="@id/repeat"
+        android:src="@drawable/ic_bin" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="72dp"
+        android:layout_toEndOf="@id/img_bin"
+        android:src="@drawable/icon" />
+
+    <ImageView
+        android:layout_width="47dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="72dp"
+        android:layout_toEndOf="@id/img"
+        android:src="@drawable/add" />
+</RelativeLayout>

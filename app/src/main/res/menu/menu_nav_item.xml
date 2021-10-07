@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/nav_user"
+            android:title="User"
+            android:icon="@drawable/ic_person"/>
+        <item android:id="@+id/nav_title"
+            android:title="Title"
+            android:icon="@drawable/ic_title"/>
+        <item android:id="@+id/nav_Browser"
+            android:title="Browser"
+            android:icon="@drawable/ic_music"/>
+        <item android:id="@+id/nav_ForYou"
+            android:title="For you"
+            android:icon="@drawable/ic_favorit"/>
+        <item android:id="@+id/nav_Radio"
+            android:title="Radio"
+            android:icon="@drawable/ic_radio"/>
+
+
+</menu>
